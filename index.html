@@ -1,0 +1,118 @@
+<html>
+<head>
+    <title> Home Page </title>
+    <style>
+        .abc {
+            color:green; 
+            background-color:pink; 
+            font-size:30px; 
+            text-align:center;
+            font-style:italic;
+        }
+        .uperdiv
+        {
+            background-color:lightpink;
+            height:100px;
+            width:1800px;
+            margin-left:50px;
+            font-size:25px69;
+            text-align:center;
+            
+           
+
+        }
+        .leftdiv 
+        {
+            background-color: skyblue;
+            height: 600px;
+            width: 300px;
+            float: left;
+            margin-left: 50px;
+        }
+        .middiv
+        {
+            background-color:palegreen;
+            height: 600px;
+            width:1200px;
+            float:left;
+
+        }
+        .rightdiv 
+        {
+            background-color: skyblue;
+            height: 600px;
+            width: 300px;
+            float: left;
+         
+        }
+        .lowerdiv {
+            background-color: red;
+            height: 100px;
+            width: 1800px;
+            margin-top: 600px;
+            margin-left: 50px;
+        }
+        .logindiv
+        {
+            padding:10px;
+            margin-top:50px;
+
+        }
+        table, tr, td {
+            padding:10px;
+            background-color:powderblue;
+        }
+    </style>
+</head>
+<body>
+    <!--
+        <p class="abc"><b>This is my First Web Page</b></p>
+        -->
+    <div class="uperdiv">Testing Class Dot Net
+
+    </div>
+
+    <div class="leftdiv">
+
+    </div>
+    <div class="middiv" >
+        <div border="1" class="logindiv">
+
+            <table border="2" align="center">
+                <tr>
+                    <td colspan="2" align="center"> <b>***Login Page Students***</b>  </td>
+                </tr>
+                <tr>
+                    <td>First Name</td>
+                    <td> <input type="text" id="x" /></td>
+                </tr>
+                <tr>
+                    <td>Second Name </td>
+                    <td> <input type="text" id="y" /></td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center"> <input type="button" value="Submit" onclick="addfun()"/> <input type="button"value="Cancel" /> <input type="button" value="two value add" width="60"/></td>
+                </tr>
+            </table>
+            <b><p id="Result" align="right" style="font-size:xx-large"> Click then New Value Find  </p></b>
+        </div>
+
+    </div>
+    <div class="rightdiv">
+
+    </div>
+    <div class="lowerdiv">
+
+    </div>
+    <script type="text/javascript">
+        function addfun()
+        {
+            let a, b;
+            a = document.getElementById("x").value;
+            b = document.getElementById("y").value;
+            document.getElementById("Result").innerHTML = a + " " + b;
+        }
+
+    </script>
+</body>
+</html>
